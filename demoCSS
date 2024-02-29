@@ -1,0 +1,79 @@
+/* .content{
+  max-width: 1199px;
+  margin: auto;
+}  */
+.header_content{
+  width: 75%;
+  margin: 50px 175px;
+}
+/* .content{
+  width: 75%;
+  margin: 50px 175px;
+}    */
+/* HEADER    */
+header{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+header li{
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+.header_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a span {
+  display: inline-block;
+  transition: all 1s;
+}
+a:hover{
+  color: #f55f8d;
+}
+a:hover span{
+  animation: upToDown .3s;
+}
+@keyframes upToDown{
+  49%{
+    transform: translateY(100%);
+  }
+  50%{
+    opacity: 0;
+    transform: translateY(-100%)
+  }
+  51%{
+    opacity: 1;
+  }
+}
+.btn-grad{
+  background-image: linear-gradient(
+    to right,
+    #fc00ff 0%,
+    #00dbde 51%,
+    #fc00ff 100%,
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200%;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  display: block;
+}
+.btn-grad:hover{
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}

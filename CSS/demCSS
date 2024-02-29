@@ -1,0 +1,171 @@
+html,
+body .roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div{
+  display: block;
+}
+.shared-background {
+  background-image: url(../Image/pic2.png);
+  background-size: cover; /* hoặc contain, tùy thuộc vào yêu cầu */
+  background-position: center center; /* điều chỉnh vị trí ảnh nền */
+}
+
+/* HEADER  */
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  padding: 50px 150px;
+}
+.container{
+  max-width: 1199px;
+  margin: auto;
+}
+.header_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  margin-right: 30px;
+}
+.header_content li{
+  padding: 55px 15px;
+}
+li{
+  list-style: none;
+}
+.header_content li a{
+  color: #070120;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+a span {
+  display: inline-block;
+  transition: all 1s;
+}
+a:hover{
+  color: #f55f8d;
+}
+a:hover span{
+  animation: upToDown .3s;
+}
+@keyframes upToDown{
+  49%{
+    transform: translateY(100%);
+  }
+  50%{
+    opacity: 0;
+    transform: translateY(-100%)
+  }
+  51%{
+    opacity: 1;
+  }
+}
+.btn-grad{
+  margin: 10px;
+  padding: 20px 35px;
+  font-size: 15px;
+  font-weight: 500;
+  background-image: linear-gradient(to right,#fc00ff 0%,#00dbde 51%,#fc00ff 100%);
+  background-size: 200%;
+  border: 1px solid transparent;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  background-size: 200%;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 30px;
+  display: block;
+}
+.btn-grad:hover{
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CAROUSEL  */
+.Carousel{
+  padding: 180px 150px;
+  overflow: hidden;
+  /* background-image:url(../Image/pic2.png); */
+  background-position: top;
+  background-size: 100%;
+}
+.title p{
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f55f8d;
+}
+.title h2{
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #262626;
+  margin-bottom: 20px;
+}
+.Carousel_content{
+display: flex;
+align-items: center;
+}
+.Carousel_left{
+  width: 60%;
+}
+.Carousel_right{
+  width: 40%;
+}
+.banner{
+  max-width: 100%;
+  display: block;
+}
+.article p{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.Carousel_content ul{
+  margin-bottom: 20px;
+}
+.Carousel_content li{
+  padding:10px 5px 10px 0;
+  font-size: 20px;
+}
+li{
+  list-style: none;
+}
+/* !.Carousel_container i{
+
+} */
